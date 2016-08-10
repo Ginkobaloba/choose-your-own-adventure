@@ -1,0 +1,2 @@
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\paycalculator\paycalculator\bin\Debug\paycalculator.exe.config
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\paycalculator\paycalculator\obj\Debug\paycalculator.csprojResolveAssemblyReference.cache

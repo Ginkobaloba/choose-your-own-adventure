@@ -1,0 +1,12 @@
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\bin\Debug\ChooseAdventure.exe.config
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\bin\Debug\ChooseAdventure.exe
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\bin\Debug\ChooseAdventure.pdb
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\obj\Debug\ChooseAdventure.exe
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\obj\Debug\ChooseAdventure.pdb
+C:\Users\Drama\AppData\Local\Temporary Projects\ChooseAdventure\obj\Debug\ChooseAdventure.csprojResolveAssemblyReference.cache
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\bin\Debug\ChooseAdventure.exe.config
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\obj\Debug\ChooseAdventure.exe
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\obj\Debug\ChooseAdventure.pdb
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\bin\Debug\ChooseAdventure.exe
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\bin\Debug\ChooseAdventure.pdb
+C:\Users\Drama\OneDrive\Documents\Visual Studio 2015\Projects\ChooseAdventure\ChooseAdventure\obj\Debug\ChooseAdventure.csprojResolveAssemblyReference.cache

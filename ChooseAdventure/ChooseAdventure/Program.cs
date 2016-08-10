@@ -9,12 +9,9 @@ namespace ChooseAdventure
     class Program
     {
         static void Main(string[] args)
-
-
         {
             Adventure adventure = new Adventure();
             adventure.RunGame();
- 
         }
     }
 }

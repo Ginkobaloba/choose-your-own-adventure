@@ -4,17 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChooseAdventure
+namespace ConsoleApplication1
 {
     class Program
     {
         static void Main(string[] args)
-
-
         {
-            Adventure adventure = new Adventure();
-            adventure.RunGame();
- 
         }
     }
 }
