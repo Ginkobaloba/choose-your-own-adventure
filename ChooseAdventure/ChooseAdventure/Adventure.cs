@@ -18,11 +18,12 @@ namespace ChooseAdventure
 
             while (player.PlayerLiving()== true)
             {
-                if (player.GetPlayerLocation() == 0 && player.WentInInventory() == false)
+                if (player.GetPlayerLocation() == 0 && player.GetWentInInventory() == false)
                 {
                     Console.WriteLine("As you gain consciousness you find yourself at the the mouth of a dark cave, a quick check of your inventory reveals a sword and a torch. You faintly rememember your name {0}. How would you like to proceed?:", player.getName());
                     string line = Console.ReadLine();
-                    if (line == "Draw Sword")
+                    string lower = line.ToLower();
+                    if (lower == "draw sword")
                     {
                         player.DrawSword();
                     }
@@ -32,12 +33,10 @@ namespace ChooseAdventure
                     }
                     else if (line == "Go Forward")
                     {
-                        player.FinishedMoving();
                         player.MovePlayerForward();
                     }
                     else if (line == "Go Back")
                     {
-                        player.FinishedMoving();
                         player.MovePlayerBack();
 
                     }
@@ -55,7 +54,41 @@ namespace ChooseAdventure
                     }
                
                 }
-                else if (player.GetPlayerLocation() == 1 && player.GetAlreadyMoved() == false)
+                else if (player.GetWentInInventory() == true)
+                {
+                    Console.WriteLine("{0}, What would you like to do now?:", player.getName());
+                    string line = Console.ReadLine();
+                    if (line == "Draw Sword")
+                    {
+                        player.DrawSword();
+                    }
+                    else if (line == "Light Torch")
+                    {
+                        player.LightTorch();
+                    }
+                    else if (line == "Go Forward")
+                    {
+                        player.MovePlayerForward();
+                    }
+                    else if (line == "Go Back")
+                    {
+                        player.MovePlayerBack();
+
+                    }
+                    else if (line == "Put Out Torch")
+                    {
+                        player.PutOutTorch();
+                    }
+                    else if (line == "Sheath Sword")
+                    {
+                        player.SheathSword();
+                    }
+                    else
+                    {
+                        RunGame();
+                    }
+                }
+                else if (player.GetPlayerLocation() == 1 && player.GetWentInInventory() == false)
                 {
                     if (player.GetTorchStatus() == true)
                     {
@@ -75,7 +108,15 @@ namespace ChooseAdventure
                 }
 
             }
-            RunGame();
+            if (player.PlayerLiving() == true)
+            {
+                RunGame();
+            }
+            else
+            {
+            Adventure adventure = new Adventure();
+            adventure.RunGame();
+            }
         }
     }
 }

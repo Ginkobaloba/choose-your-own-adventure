@@ -97,10 +97,6 @@ namespace ChooseAdventure
         {
             return this.WentInInventory;
         }
-        //public void FinishedMoving()
-        //{
-        //    this.AlreadyMoved = true;
-        }
         public bool GetSwordStatus()
         {
             return this.SwordDrawn;
