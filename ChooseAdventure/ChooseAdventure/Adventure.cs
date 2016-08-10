@@ -11,7 +11,43 @@ namespace ChooseAdventure
         player player;
         public Adventure()
         {
-                this.player = new player("Ginkobaloba");
+            this.player = new player("Ginkobaloba");
+        }
+        public void CallInventory(string lower)
+        {
+            if (lower == "draw sword")
+            {
+                player.DrawSword();
+            }
+            else if (lower == "light torch")
+            {
+                player.LightTorch();
+            }
+            else if (lower == "go forward")
+            {
+                player.MovePlayerForward();
+            }
+            else if (lower == "go back")
+            {
+                player.MovePlayerBack();
+
+            }
+            else if (lower == "put out torch")
+            {
+                player.PutOutTorch();
+            }
+            else if (lower == "sheath sword")
+            {
+                player.SheathSword();
+            }
+            else if (lower == "help")
+            {
+                player.CallHelp();
+            }
+            else
+            {
+                RunGame();
+            }
         }
         public void RunGame()
         {
@@ -23,70 +59,14 @@ namespace ChooseAdventure
                     Console.WriteLine("As you gain consciousness you find yourself at the the mouth of a dark cave, a quick check of your inventory reveals a sword and a torch. You faintly rememember your name {0}. How would you like to proceed?:", player.getName());
                     string line = Console.ReadLine();
                     string lower = line.ToLower();
-                    if (lower == "draw sword")
-                    {
-                        player.DrawSword();
-                    }
-                    else if (line == "Light Torch")
-                    {
-                        player.LightTorch();
-                    }
-                    else if (line == "Go Forward")
-                    {
-                        player.MovePlayerForward();
-                    }
-                    else if (line == "Go Back")
-                    {
-                        player.MovePlayerBack();
-
-                    }
-                    else if (line == "Put Out Torch")
-                    {
-                        player.PutOutTorch();
-                    }
-                    else if (line == "Sheath Sword")
-                    {
-                        player.SheathSword();
-                    }
-                    else
-                    {
-                        RunGame();
-                    }
-               
+                    this.CallInventory(lower);
                 }
                 else if (player.GetWentInInventory() == true)
                 {
                     Console.WriteLine("{0}, What would you like to do now?:", player.getName());
                     string line = Console.ReadLine();
-                    if (line == "Draw Sword")
-                    {
-                        player.DrawSword();
-                    }
-                    else if (line == "Light Torch")
-                    {
-                        player.LightTorch();
-                    }
-                    else if (line == "Go Forward")
-                    {
-                        player.MovePlayerForward();
-                    }
-                    else if (line == "Go Back")
-                    {
-                        player.MovePlayerBack();
-
-                    }
-                    else if (line == "Put Out Torch")
-                    {
-                        player.PutOutTorch();
-                    }
-                    else if (line == "Sheath Sword")
-                    {
-                        player.SheathSword();
-                    }
-                    else
-                    {
-                        RunGame();
-                    }
+                    string lower = line.ToLower();
+                    this.CallInventory(lower);
                 }
                 else if (player.GetPlayerLocation() == 1 && player.GetWentInInventory() == false)
                 {
@@ -94,6 +74,15 @@ namespace ChooseAdventure
                     {
                         Console.WriteLine("As you enter the cave your torch illuminates your path.You proceed forward until you reach a fork in the cave to the left you hear a low whine, to the right a constant steady pound how do you proceed?");
                         string line = Console.ReadLine();
+                        string lower = line.ToLower();
+                        this.CallInventory(lower);
+                    }
+                    else if (player.GetWentInInventory() == true)
+                    {
+                        Console.WriteLine("{0}, What would you like to do now?:", player.getName());
+                        string line = Console.ReadLine();
+                        string lower = line.ToLower();
+                        this.CallInventory(lower);
                     }
                     else if (player.GetSwordStatus() == true)
                     {

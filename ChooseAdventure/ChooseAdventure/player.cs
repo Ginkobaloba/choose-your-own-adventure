@@ -36,6 +36,11 @@ namespace ChooseAdventure
                 this.TorchOut = false;
                 this.WentInInventory = true;
             }
+            else if (this.SwordDrawn == true)
+            {
+                Console.WriteLine("Your sword is already drawn.");
+                this.WentInInventory = true;
+            } 
             else
             {
                 this.SwordDrawn = true;
@@ -45,16 +50,29 @@ namespace ChooseAdventure
         }
         public void SheathSword()
         {
-            Console.WriteLine("Cold steel rings in the air as you sheath your sword.");
-            this.SwordDrawn = false;
-            this.WentInInventory = true;
+            if (this.SwordDrawn == false)
+            {
+                Console.WriteLine("Your sword isn't drawn");
+                this.WentInInventory = true;
+            }
+            else
+            {
+                Console.WriteLine("the ringing of cold steel is muffled as you sheath your sword.");
+                this.SwordDrawn = false;
+                this.WentInInventory = true;
+            }
         }
         public void LightTorch()
         {
-            if (this.SwordDrawn == true)
+            if (this.TorchOut == true)
+            {
+                Console.WriteLine("Your torch is already ablaze with a white hot fury.");
+                this.SwordDrawn = false;
+                this.WentInInventory = true;
+            }
+            else if (this.SwordDrawn == true)
             {
                 Console.WriteLine("you sheath your sword and light your torch.");
-                this.SwordDrawn = false;
                 this.WentInInventory = true;
             }
             else                
@@ -66,9 +84,18 @@ namespace ChooseAdventure
         }
         public void PutOutTorch()
         {
-            Console.WriteLine("In a cloud of smoke you extinguish your torch.");
-            this.TorchOut = false;
-            this.WentInInventory = true;
+            if (this.TorchOut == true)
+            {
+                Console.WriteLine("In a cloud of smoke you extinguish your torch.");
+                this.TorchOut = false;
+                this.WentInInventory = true;
+            }
+            else
+            {
+                Console.WriteLine("In the darkness you ponder what you're trying to put out.");
+                this.WentInInventory = true;
+            }
+
         }
         public void PlayerDeath()
         {
@@ -104,6 +131,11 @@ namespace ChooseAdventure
         public bool GetTorchStatus()
         {
             return this.TorchOut;
+        }
+        public void CallHelp()
+        {
+            Console.WriteLine("Available Commands include: Draw Sword, Sheath Sword, Light Torch, Put Out Torch, Go Forward, Go Back");
+            this.WentInInventory = true;
         }
     }
     }
