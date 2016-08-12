@@ -1,0 +1,2 @@
+C:\Users\Drama\AppData\Local\Temporary Projects\ConsoleApplication2\obj\Debug\DiceGame.csprojResolveAssemblyReference.cache
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe.config
