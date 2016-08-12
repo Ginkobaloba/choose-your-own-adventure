@@ -1,0 +1,7 @@
+C:\Users\Drama\AppData\Local\Temporary Projects\BaseballLists\bin\Debug\BaseballLists.exe.config
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\bin\Debug\BaseballLists.exe.config
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\obj\Debug\BaseballLists.csprojResolveAssemblyReference.cache
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\bin\Debug\BaseballLists.exe
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\bin\Debug\BaseballLists.pdb
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\obj\Debug\BaseballLists.exe
+C:\Users\Drama\Desktop\devcodecampprojects\ListsandArrays\BaseballLists\BaseballLists\obj\Debug\BaseballLists.pdb
