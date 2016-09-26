@@ -10,6 +10,11 @@ namespace pigDiceGame
     {
         static void Main(string[] args)
         {
+            Game Game = new Game();
+            Game.Setup();
+            Game.runInstructions();
+            Game.runGame();
+            Game.EndGame();
         }
     }
 }

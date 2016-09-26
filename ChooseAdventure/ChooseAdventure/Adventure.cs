@@ -13,42 +13,7 @@ namespace ChooseAdventure
         {
             this.player = new player("Ginkobaloba");
         }
-        public void CallInventory(string lower)
-        {
-            if (lower == "draw sword")
-            {
-                player.DrawSword();
-            }
-            else if (lower == "light torch")
-            {
-                player.LightTorch();
-            }
-            else if (lower == "go forward")
-            {
-                player.MovePlayerForward();
-            }
-            else if (lower == "go back")
-            {
-                player.MovePlayerBack();
 
-            }
-            else if (lower == "put out torch")
-            {
-                player.PutOutTorch();
-            }
-            else if (lower == "sheath sword")
-            {
-                player.SheathSword();
-            }
-            else if (lower == "help")
-            {
-                player.CallHelp();
-            }
-            else
-            {
-                RunGame();
-            }
-        }
         public void RunGame()
         {
 
@@ -105,6 +70,42 @@ namespace ChooseAdventure
             {
             Adventure adventure = new Adventure();
             adventure.RunGame();
+            }
+        }
+        public void CallInventory(string lower)
+        {
+            if (lower == "draw sword")
+            {
+                player.DrawSword();
+            }
+            else if (lower == "light torch")
+            {
+                player.LightTorch();
+            }
+            else if (lower == "go forward")
+            {
+                player.MovePlayerForward();
+            }
+            else if (lower == "go back")
+            {
+                player.MovePlayerBack();
+
+            }
+            else if (lower == "put out torch")
+            {
+                player.PutOutTorch();
+            }
+            else if (lower == "sheath sword")
+            {
+                player.SheathSword();
+            }
+            else if (lower == "help")
+            {
+                player.CallHelp();
+            }
+            else
+            {
+                RunGame();
             }
         }
     }

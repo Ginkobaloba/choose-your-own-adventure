@@ -1,2 +1,9 @@
 C:\Users\Drama\AppData\Local\Temporary Projects\ConsoleApplication2\obj\Debug\DiceGame.csprojResolveAssemblyReference.cache
 C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe.config
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.pdb
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.exe
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.pdb
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe.CodeAnalysisLog.xml
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\bin\Debug\DiceGame.exe.lastcodeanalysissucceeded
+C:\Users\Drama\Desktop\devcodecampprojects\DiceGame\DiceGame\DiceGame\obj\Debug\DiceGame.csprojResolveAssemblyReference.cache

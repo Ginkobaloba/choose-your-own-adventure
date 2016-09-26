@@ -1,0 +1,34 @@
+@font-face{
+	font-family: myFirstFont;
+    src:url(myfont.ttf);
+}
+
+body{
+	background-color:green;
+	color:white;
+}
+H1{
+	color:yellow;
+
+}
+.boldclass{
+	font-weight:bold;
+	font-style:
+	Font-variant:lowercase;
+	  position: relative;
+		top: -20px;
+		left: 20px;
+}
+#bigid{
+	font-size: 24px;
+	Font-weight:bold;
+	font-variant:uppercase;
+	  position: relative;
+	font-family: myFirstFont;
+  Bottom: 20px;
+  right: -20px;
+}
+Aside{
+	Position:relative;
+		Right:-50px
+}

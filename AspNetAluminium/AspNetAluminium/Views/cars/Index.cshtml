@@ -1,0 +1,80 @@
+﻿@model IEnumerable<AspNetAluminium.Models.car>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<head>
+    <style>
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+        function initMap()
+        {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: { lat: 43.1485084, lng: -88.1044376, },
+            zoom: 13
+        });
+z
+        var marker = new google.maps.Marker({
+            position: {},
+            map: map,
+            title: 'Hello World!'
+        }); 
+      }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPhuvNN439sVvdr5Fpg4maQjMCz-FtAZM&callback=initMap">
+    </script>
+</body>
+
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Make)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Model)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @data = ViewData.Model.ElementAt(0));
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+
+    </tr>
+}
+
+</table>

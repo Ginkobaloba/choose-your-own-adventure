@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PigDiceGame
+namespace pigDiceGame
 {
-    public class Dice
+    class Dice
     {
         int valueShown;
         int numberOfSides;

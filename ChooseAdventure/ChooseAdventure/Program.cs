@@ -10,8 +10,8 @@ namespace ChooseAdventure
     {
         static void Main(string[] args)
         {
-            Adventure adventure = new Adventure();
-            adventure.RunGame();
+             Adventure adventure = new Adventure();
+             adventure.RunGame();
         }
     }
 }
